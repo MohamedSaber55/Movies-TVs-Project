@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+// $bodyColor: #18202c;
+$bodyColor: #08051b;
+// $bodyColor: #251d4b;
+$secondColor: #df565a;
+$textColor: #fff;
+$inputColor: #a87f1f;
+$navBG:#0f0b2b;
+$secondColor:#fed401;
+$linkBG:#3f9ce5;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $bodyColor;
+    color: $textColor;
+    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color: $textColor !important;
+    :hover{
+        color:$secondColor !important;
+    }
+}
+
+input {
+    // box-shadow: 0 0 10px $linkBG !important;
+    background-color: transparent !important;
+    color: $textColor !important;
+}
+
+
+// button{
+//     background-color:$btnBG !important;
+// }
+
+a{
+    text-decoration: none !important;
+}
+
+
+.spinner{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+}
+
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.vote{
+    background-color: #fed401;
+    padding: 0px 0.75em;
+    position: absolute;
+    top: 10px;
+    right:0px;
+    opacity: 0.7;
+    border-radius:20px 0 0 20px ;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+
+
+.footer{
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
