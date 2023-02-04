@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/login/static/css/main.f1a2e10f.css",
-    "main.js": "/login/static/js/main.7d8109cf.js",
-    "static/js/787.73f06e03.chunk.js": "/login/static/js/787.73f06e03.chunk.js",
-    "static/media/fa-solid-900.ttf": "/login/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
-    "static/media/fa-brands-400.ttf": "/login/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
-    "static/media/fa-solid-900.woff2": "/login/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
-    "static/media/fa-brands-400.woff2": "/login/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
-    "static/media/fa-regular-400.ttf": "/login/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
-    "static/media/fa-regular-400.woff2": "/login/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
-    "static/media/fa-v4compatibility.ttf": "/login/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
-    "static/media/fa-v4compatibility.woff2": "/login/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
-    "index.html": "/login/index.html",
-    "main.f1a2e10f.css.map": "/login/static/css/main.f1a2e10f.css.map",
-    "main.7d8109cf.js.map": "/login/static/js/main.7d8109cf.js.map",
-    "787.73f06e03.chunk.js.map": "/login/static/js/787.73f06e03.chunk.js.map"
+    "main.css": "/Movies-TVs-Project/static/css/main.7b1fb483.css",
+    "main.js": "/Movies-TVs-Project/static/js/main.1ca67cac.js",
+    "static/js/787.73f06e03.chunk.js": "/Movies-TVs-Project/static/js/787.73f06e03.chunk.js",
+    "static/media/fa-solid-900.ttf": "/Movies-TVs-Project/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
+    "static/media/fa-brands-400.ttf": "/Movies-TVs-Project/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
+    "static/media/fa-solid-900.woff2": "/Movies-TVs-Project/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
+    "static/media/fa-brands-400.woff2": "/Movies-TVs-Project/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
+    "static/media/fa-regular-400.ttf": "/Movies-TVs-Project/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
+    "static/media/fa-regular-400.woff2": "/Movies-TVs-Project/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Movies-TVs-Project/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Movies-TVs-Project/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
+    "index.html": "/Movies-TVs-Project/index.html",
+    "main.7b1fb483.css.map": "/Movies-TVs-Project/static/css/main.7b1fb483.css.map",
+    "main.1ca67cac.js.map": "/Movies-TVs-Project/static/js/main.1ca67cac.js.map",
+    "787.73f06e03.chunk.js.map": "/Movies-TVs-Project/static/js/787.73f06e03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1a2e10f.css",
-    "static/js/main.7d8109cf.js"
+    "static/css/main.7b1fb483.css",
+    "static/js/main.1ca67cac.js"
   ]
 }
