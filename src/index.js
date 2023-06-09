@@ -9,7 +9,7 @@ import './index.scss';
 import AuthContextProvider from './Context/AuthContext';
 import TrendingMediaContextProvider from './Context/TrendingMediaContext';
 import FavContextProvider from './Context/FavContext';
-import MoviesContextProvider from './Context/MoviesContext';
+// import MoviesContextProvider from './Context/MoviesContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

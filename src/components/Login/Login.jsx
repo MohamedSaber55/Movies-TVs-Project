@@ -23,7 +23,7 @@ export default function Login() {
         setUserData(myUser);
     };
     async function sendUserDataToApi() {
-        let { data } = await axios.post(`https://sticky-note-fe.vercel.app/signin`, userData)
+        let { data } = await axios.post(`https://route-ecommerce-app.vercel.app/api/v1/auth/signin`, userData)
         if (data.message === "success") {
             setIsLoading(false);
             localStorage.setItem('userToken', data.token);

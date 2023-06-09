@@ -17,7 +17,7 @@ export default function TrendingTvShows() {
                 </div>
             </div>
             {trendingTvShows.slice(0, 10).map((tvShow, index) => (
-                <div className="col-lg-2 col-md-4" key={index}>
+                <div className="col-lg-2 col-md-4 col-sm-4 col-6" key={index}>
                     <Link to={"/itemdetails/" + tvShow.id + "/" + tvShow.media_type}>
                         <div className="item position-relative">
                             {tvShow.poster_path ? (<img className=" w-100" src={"https://image.tmdb.org/t/p/w500" + tvShow.poster_path} alt="PosterPath" />) : ("")}

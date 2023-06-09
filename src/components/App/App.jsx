@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Layout from '../Layout/Layout'
 import Home from '../Home/Home'
 import ProtectedRouter from '../ProtectedRouter/ProtectedRouter'
@@ -24,6 +24,7 @@ import OnAirToDay from '../TV/OnAirToDay/OnAirToDay'
 import SearchPeople from '../Search/SearchPeople/SearchPeople'
 import SearchMovies from '../Search/SearchMovies/SearchMovies'
 import SearchTVs from '../Search/SearchTVs/SearchTVs'
+import ScrollToTop from '../ScrollToTop/ScrollToTop.jsx'
 
 
 
@@ -37,8 +38,7 @@ import SearchTVs from '../Search/SearchTVs/SearchTVs'
 
 export default function App() {
 
-
-  const routers = createBrowserRouter([
+  const routers = createHashRouter([
     {
       path: '/', element: <Layout />, children: [
         { index: true, element: <ProtectedRouter><Home /></ProtectedRouter> },

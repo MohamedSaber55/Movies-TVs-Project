@@ -7,39 +7,51 @@ import notFoundImg from './../../../images/no-img.png'
 
 
 export default function OnAirTVs() {
-    let pageNumber = new Array(5).fill('').map((elm, i) => i + 1)
     const [onAirTVs, setOnAirTVs] = useState([])
-    function pagination(page) {
-        getTrending('on_the_air', setOnAirTVs, page)
+    const [count, setCount] = useState(1)
+    const [totalPages, setTotalPages] = useState(1)
+    function counterPrevPages(pageNum) {
+        const prevCount = count - 1
+        if (prevCount < 1) {
+        } else {
+            setCount(prevCount);
+        }
     }
-
+    function counterNextPages(pageNum) {
+        const nextCount = count + 1
+        if (nextCount >= totalPages) {
+        } else {
+            setCount(nextCount);
+        }
+    }
     async function getTrending(tvType, callback, pageNumber) {
         let { data } = await axios.get(`https://api.themoviedb.org/3/tv/${tvType}?api_key=8f238eaf1dbfa0b41a9a488198eb3113&language=en-US&page=${pageNumber}`)
         callback(data.results);
+        setTotalPages(data.total_pages)
     }
 
     useEffect(() => {
-        getTrending('on_the_air', setOnAirTVs, 1)
-    }, [])
+        getTrending('on_the_air', setOnAirTVs, count)
+    }, [count])
 
 
     return (
         <>
             {onAirTVs.length > 0 ? <div className="container py-4">
-                <nav aria-label="Page navigation example ">
-                    <ul className="pagination justify-content-center">
-                        {pageNumber.map((el) => <li onClick={() => pagination(el)} key={el} className="page-item"><Link className="page-link bg-transparent rounded-circle mx-2" to="">{el}</Link></li>)}
-                    </ul>
-                </nav>
+                <div className="pag py-3 d-flex align-items-center justify-content-center">
+                    <span className="prev mx-2 fs-1 btn rounded-circle" onClick={() => counterPrevPages(count)} ><i className="fa-solid fa-circle-chevron-left"></i></span>
+                    <span className="currant border p-3 rounded-5">Page <span className="text-warning" >{count}</span></span>
+                    <span className="next mx-2 fs-1 btn rounded-circle" onClick={() => counterNextPages(count)} ><i className="fa-solid fa-circle-chevron-right"></i></span>
+                </div>
                 <div className="row mt-4">
                     <div className="col-md-4 ">
-                        <div className=" mb-4 w-25"></div>
-                        <h2 className="h4">On Air <br /> TV Shows <br /> To Watch Right Now</h2>
-                        <p className="text-muted py-3">Most Watched TV Shows by Days</p>
-                        <div className=" mt-3 w-100"></div>
+                        <div className="h-100 d-flex justify-content-center flex-column">
+                            <h2 className="h4">On Air <br /> TV Shows <br /> To Watch Right Now</h2>
+                            <p className="text-muted py-3">Most Watched TV Shows by Days</p>
+                        </div>
                     </div>
                     {onAirTVs.map((tv, index) => (
-                        <div className={`col-lg-2 col-md-4`} key={index}>
+                        <div className={`col-lg-2 col-md-4 col-sm-4 col-6`} key={index}>
                             <Link className="" to={"/itemdetails/" + tv.id + "/tv"}>
                                 <div className={`${`tv`} my-2 position-relative`}>
                                     {tv.poster_path ? (<img className=" w-100 rounded-1" src={"https://image.tmdb.org/t/p/w500" + tv.poster_path} alt="Poster" />) : ("")}

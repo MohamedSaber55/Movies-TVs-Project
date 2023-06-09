@@ -24,7 +24,7 @@ export default function Register() {
   };
 // console.log(userData);
   async function sendUserDataToApi() {
-    let { data } = await axios.post(`https://sticky-note-fe.vercel.app/signup`, userData)
+    let { data } = await axios.post(`https://route-ecommerce-app.vercel.app/api/v1/auth/signup`, userData)
     if (data.message === "success") {
       setIsLoading(false);
       navToLogin()
@@ -45,7 +45,6 @@ export default function Register() {
     } else {
       sendUserDataToApi();
     }
-
   };
 
   function validateFormData() {

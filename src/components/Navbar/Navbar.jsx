@@ -86,7 +86,7 @@ export default function Navbar() {
                                     </li>
                                 </> : <>
                                     <li className="nav-item">
-                                        <Link className={`btn-outline-warning nav-link btn small mx-2`} to="login">Log In</Link>
+                                        <Link className={`btn-outline-warning nav-link btn small mx-2 my-2 my-lg-0`} to="login">Log In</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className={`btn-outline-warning nav-link btn small mx-2`} to="register">Register</Link>

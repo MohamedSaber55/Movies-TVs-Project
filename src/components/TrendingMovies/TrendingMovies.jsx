@@ -23,7 +23,7 @@ export default function TrendingMovies() {
         </div>
       </div>
       {trendingMovies.slice(0, 10).map((movie, index) => (
-        <div className={`col-lg-2 col-md-4`} key={index}>
+        <div className={`col-lg-2 col-md-4 col-sm-4 col-6`} key={index}>
           <Link className="" to={"/itemdetails/" + movie.id + "/" + movie.media_type}>
             <div className={`${trendingMovieStyle.movie} my-2 position-relative`}>
               {movie.poster_path ? (<img className=" w-100 rounded-1" src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} alt="Poster" />) : ("")}

@@ -17,7 +17,7 @@ export default function TrendingPeople() {
                 </div>
             </div>
             {trendingPeople.slice(0, 10).map((person, index) => (
-                <div className="col-lg-2 col-md-4" key={index}>
+                <div className="col-lg-2 col-md-4 col-sm-4 col-6" key={index}>
                     <Link to={"/itemdetails/" + person.id + "/" + person.media_type}>
                         <div className="item position-relative">
                             {person.profile_path ? (<img className=" w-100" src={"https://image.tmdb.org/t/p/w500" + person.profile_path} alt="ProfileImage" />) : ("")}
